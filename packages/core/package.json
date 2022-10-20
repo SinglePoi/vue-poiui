@@ -4,15 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "main": "./dist/poi-ui.js",
-  "types":"./dist/poi-ui.js",
+  "types": "./dist/poi-ui.js",
   "module": "./dist/poi-ui.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-json/ic": "^1.1.9",
+    "unocss": "^0.45.30",
     "vue": "^3.2.37"
   },
   "devDependencies": {

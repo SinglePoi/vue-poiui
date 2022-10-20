@@ -15,6 +15,11 @@ import HelloWorld from './components/HelloWorld.vue'
   </div>
   <HelloWorld msg="Vite + Vue" />
   <PButton></PButton>
+  <p-button type="primary">示例按钮</p-button>
+  <p-button type="common">示例按钮</p-button>
+  <p-button type="success">示例按钮</p-button>
+  <p-button type="danger">示例按钮</p-button>
+  <p-button type="warning">示例按钮</p-button>
 </template>
 
 <style scoped>
@@ -23,9 +28,11 @@ import HelloWorld from './components/HelloWorld.vue'
   padding: 1.5em;
   will-change: filter;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
