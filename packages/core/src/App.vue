@@ -15,12 +15,22 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <div class="i-ic-baseline-search"></div>
   <p-button type="primary" icon="search">示例按钮</p-button>
   <p-button type="common">示例按钮</p-button>
   <p-button type="success">示例按钮</p-button>
   <p-button type="danger">示例按钮</p-button>
   <p-button type="warning">示例按钮</p-button>
-  <div class="i-ic-baseline-search" />
+  <p-button type="primary" outline>示例按钮</p-button>
+  <p-button type="common" outline>示例按钮</p-button>
+  <p-button type="success" outline>示例按钮</p-button>
+  <p-button type="danger" outline>示例按钮</p-button>
+  <p-button type="warning" outline>示例按钮</p-button>
+  <p-button type="primary" outline circle>示例按钮</p-button>
+  <p-button type="common" outline circle>示例按钮</p-button>
+  <p-button type="success" outline circle>示例按钮</p-button>
+  <p-button type="danger" outline circle>示例按钮</p-button>
+  <p-button type="warning" outline circle icon="search">示例按钮</p-button>
 </template>
 
 <style scoped>

@@ -16,7 +16,15 @@ const colors = [
   "light",
   "sky",
   'emerald',
-  'amber'
+  'amber',
+  'cyan',
+  'violet',
+  'slate',
+  'zinc',
+  'light',
+  'rose',
+  'orange',
+  'light-blue'
 ];
 const safelist = [
   ...colors.map((v) => `bg-${v}-100`),
