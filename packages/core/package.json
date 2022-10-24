@@ -15,7 +15,9 @@
     "test": "vitest",
     "test-ui": "vitest --ui",
     "coverage": "vitest run --coverage",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --fix --ext .ts,.vue src",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\""
   },
   "dependencies": {
     "@iconify-json/ic": "^1.1.9",
@@ -24,10 +26,20 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
     "@vitejs/plugin-vue": "^3.1.0",
     "@vitest/ui": "^0.24.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.26.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.6.0",
     "happy-dom": "^7.6.0",
+    "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
     "vitest": "^0.24.3",

@@ -1,5 +1,5 @@
-import PButton from './PButton.vue'
+import PButton from "./PButton.vue";
 
-export { PButton }
+export { PButton };
 
-export default PButton
+export default PButton;
