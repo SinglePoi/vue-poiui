@@ -26,7 +26,6 @@ defineProps({
 </script>
 
 <template>
-  <!-- TODO template -->
   <button title="ul-button" type="button" :class="[
   `py-2 px-3 font-normal text-3 leading-3 mx-1 cursor-pointer`,
   circle ? 'rounded-full' : 'rounded',
