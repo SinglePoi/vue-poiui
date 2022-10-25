@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { PropType, useSlots } from "vue";
-import type { Slots } from "vue";
+// import type { Slots } from "vue";
 import "uno.css";
 // import "iconify-icon";
 const slots: any = useSlots();
