@@ -24,7 +24,8 @@ export default defineConfig({
   ],
   build: {
     rollupOptions,
-    minify: false,
+    minify: "esbuild",
+    sourcemap: true, // 输出单独 source文件
     cssCodeSplit: true,
     lib: {
       // resolve(__dirname, './src/entry.ts')
