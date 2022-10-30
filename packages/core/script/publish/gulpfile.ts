@@ -25,10 +25,10 @@ const publish = async () => {
     //先给transitpkg升个版本
     // await run('pnpm version patch', `${componentPath}/transitpkg`)
     //复制到dist目录
-    // await copypackage()
+    await copypackage()
     console.log("---开始发布---");
     //在dist下执行发布命令
-    // await run('npm publish', `${componentPath}/dist`)
+    await run('npm publish', `${componentPath}/dist`)
     // run('pnpm publish')
 }
 
