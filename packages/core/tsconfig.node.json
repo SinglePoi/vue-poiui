@@ -7,6 +7,6 @@
   },
   "include": [
     "vite.config.ts",
-    "unocss.ts"
+    "./config/**.ts"
   ]
 }

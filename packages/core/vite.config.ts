@@ -3,9 +3,8 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import vueJsx from "@vitejs/plugin-vue-jsx";
-
-import { presetUno, presetAttributify, presetIcons } from "unocss";
 import Unocss from "./config/unocss";
+import dts from 'vite-plugin-dts'
 
 const rollupOptions = {
   external: ["vue", "vue-router"],
@@ -21,15 +20,17 @@ export default defineConfig({
   plugins: [
     vue(), // 添加UnoCSS插件
     Unocss(),
+    vueJsx(),
+    dts()
   ],
   build: {
     rollupOptions,
-    minify: "esbuild",
-    sourcemap: true, // 输出单独 source文件
+    minify: "terser",
+    sourcemap: false, // 输出单独 source文件
     cssCodeSplit: true,
     lib: {
       // resolve(__dirname, './src/entry.ts')
-      entry: "./src/entry.ts",
+      entry: resolve(__dirname, './src/entry.ts'),
       name: "PoiUI",
       fileName: "poi-ui",
       // 导出模块格式
