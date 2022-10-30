@@ -11,13 +11,18 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "turbo run format",
-    "prepare": "turbo run prepare"
+    "prepare": "turbo run prepare",
+    "build:ui": "gulp -f packages/core/script/build/gulpfile.ts",
+    "publish:ui": "gulp -f packages/core/script/publish/gulpfile.ts"
   },
   "devDependencies": {
+    "@types/gulp": "^4.0.9",
     "eslint-config-custom": "workspace:*",
+    "gulp": "^4.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "latest",
     "pretty-quick": "^3.1.3",
+    "sucrase": "^3.28.0",
     "turbo": "latest"
   },
   "engines": {

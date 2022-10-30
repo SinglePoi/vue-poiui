@@ -16,6 +16,9 @@
     },
     "prepare": {
       "cache": false
+    },
+    "build:ui": {
+      "cache": false
     }
   }
 }

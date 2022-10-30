@@ -1,0 +1,24 @@
+{
+    "name": "poi-ui",
+    "version": "0.0.5-beta.1",
+    "type": "module",
+    "main": "./dist/poi-ui.umd.cjs",
+    "types": "./dist/poi-ui.d.ts",
+    "module": "./dist/poi-ui.js",
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        ".": {
+            "import": "./dist/poi-ui.js",
+            "require": "./dist/poi-ui.umd.cjs"
+        }
+    },
+    "keywords": [
+        "poi-ui",
+        "vue3组件库"
+    ],
+    "author": "SinglePoi",
+    "license": "MIT",
+    "description": ""
+}

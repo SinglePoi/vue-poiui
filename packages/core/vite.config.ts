@@ -17,6 +17,11 @@ const rollupOptions = {
 };
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+        '@': resolve(__dirname, 'src'),
+    },
+  },
   plugins: [
     vue(), // 添加UnoCSS插件
     Unocss(),
@@ -25,7 +30,7 @@ export default defineConfig({
   ],
   build: {
     rollupOptions,
-    minify: "terser",
+    minify: true,
     sourcemap: false, // 输出单独 source文件
     cssCodeSplit: true,
     lib: {
