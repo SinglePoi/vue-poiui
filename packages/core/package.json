@@ -1,20 +1,9 @@
 {
-  "name": "poi-ui",
+  "name": "@poi/core",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/poi-ui.umd.cjs",
-  "types": "./dist/poi-ui.d.ts",
-  "module": "./dist/poi-ui.js",
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": {
-      "import": "./dist/poi-ui.js",
-      "require": "./dist/poi-ui.umd.cjs"
-    }
-  },
+  "main": "./dist/poi-ui.js",
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
   },

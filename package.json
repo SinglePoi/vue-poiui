@@ -11,7 +11,8 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "turbo run format",
-    "prepare": "turbo run prepare"
+    "prepare": "turbo run prepare",
+    "test:run": "turbo run test:run"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",

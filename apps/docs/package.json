@@ -14,7 +14,7 @@
     "vue": "3.2.38"
   },
   "dependencies": {
-    "poi-ui": "workspace:*",
+    "@poi/core": "workspace:*",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
     "unocss": "^0.45.30",
     "vite": "^3.1.0"
